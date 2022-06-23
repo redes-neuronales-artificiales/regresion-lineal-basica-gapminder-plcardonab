@@ -157,7 +157,7 @@ def pregunta_04():
     (X_train, X_test, y_train, y_test) = train_test_split( 
         X_fertility,
         y_life,
-        test_size=0.8,
+        test_size=0.2,
         random_state=53
     )
     # Cree una instancia del modelo de regresión lineal
@@ -176,8 +176,3 @@ def pregunta_04():
     #rmse = np.sqrt(____(____, ____))
     rmse = np.sqrt(mean_squared_error(y_test, y_pred))
     print("Root Mean Squared Error: {:6.4f}".format(rmse))
-
-pregunta_01()
-pregunta_02()
-pregunta_03()
-pregunta_04()
